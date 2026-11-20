@@ -1,0 +1,12 @@
+{
+  "name": "@wan/api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "백엔드 API 호출 공통 도구. 모든 앱이 같은 방식으로 호출하고 같은 방식으로 오류를 처리한다. 소스 그대로 앱이 가져다 쓴다.",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "devDependencies": {
+    "typescript": "^5"
+  }
+}

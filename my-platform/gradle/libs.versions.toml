@@ -1,0 +1,13 @@
+[versions]
+spring-boot = "4.1.2"
+mybatis-spring-boot = "4.1.0"
+# Spring Boot 4.1.2 가 관리하는 3.5.10 에 보안 취약점 4건(CVE-2026-119210 등)이 보고되어 수정 버전으로 올린다.
+# Boot 가 3.5.11 이상으로 올라가면 이 항목을 지우고 버전 없는 좌표로 되돌린다.
+mariadb-jdbc = "3.5.11"
+lombok = "1.18.48"
+
+[libraries]
+spring-boot-gradle-plugin = { module = "org.springframework.boot:spring-boot-gradle-plugin", version.ref = "spring-boot" }
+mybatis-spring-boot-starter = { module = "org.mybatis.spring.boot:mybatis-spring-boot-starter", version.ref = "mybatis-spring-boot" }
+mariadb-jdbc = { module = "org.mariadb.jdbc:mariadb-java-client", version.ref = "mariadb-jdbc" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }

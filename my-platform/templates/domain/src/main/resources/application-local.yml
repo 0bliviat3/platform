@@ -1,0 +1,18 @@
+# 로컬 개발용: DB 없이 기동된다. (DB 접근이 필요한 기능만 실패한다)
+spring:
+  datasource:
+    url: __DB_URL__
+    username: local
+    password: local
+    hikari:
+      # DB 가 없어도 기동 시 실패하지 않는다.
+      initialization-fail-timeout: -1
+
+management:
+  health:
+    db:
+      enabled: false
+
+wan:
+  security:
+    open: true

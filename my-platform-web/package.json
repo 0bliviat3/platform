@@ -1,0 +1,22 @@
+{
+  "name": "my-platform-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "PS의 사내 개발서버에 붙는 플랫폼 서비스 웹 (npm workspaces)",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10"
+  }
+}

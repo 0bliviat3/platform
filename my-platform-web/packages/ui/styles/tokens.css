@@ -1,0 +1,40 @@
+/*
+ * 디자인 토큰 = Tailwind 테마. 색상·글꼴·모양 값은 코드에 직접 쓰지 않고 여기 정의한 이름으로만 쓴다.
+ * 예) --color-primary 를 정의하면 bg-primary, text-primary, border-primary 로 쓸 수 있다.
+ * 값은 임시 기본값이며, 퍼블리싱 규칙(03_publishing_rules) 확정 시 이 파일에서만 바꾼다.
+ * 간격은 Tailwind 기본 단위(1 = 4px)를 그대로 쓴다. 예) p-4 = 16px
+ */
+@theme {
+	/* 색상 */
+	--color-page: #f6f7f9; /* 화면 배경 */
+	--color-surface: #ffffff; /* 카드·표 등 면 */
+	--color-ink: #1b1f24; /* 본문 글자 */
+	--color-ink-muted: #5b6573; /* 보조 글자 */
+	--color-line: #d5dae1; /* 테두리·구분선 */
+	--color-primary: #1f5eff;
+	--color-primary-hover: #1a4fd6;
+	--color-primary-fg: #ffffff; /* primary 배경 위의 글자 */
+	--color-danger: #c62828;
+	--color-danger-bg: #fdecea;
+	--color-success: #1b7a3d;
+	--color-success-bg: #e8f5ec;
+	--color-focus: #1f5eff;
+
+	/* 포털 레이아웃(상단·왼쪽 메뉴) */
+	--color-nav: #17233b;
+	--color-nav-fg: #c9d1e0;
+	--color-nav-fg-strong: #ffffff;
+	--color-nav-active: rgb(255 255 255 / 0.12);
+	--spacing-sidebar: 220px; /* w-sidebar */
+
+	/* 글꼴 */
+	--font-sans: "Pretendard", "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+	--text-sm: 13px;
+	--text-base: 15px;
+	--text-lg: 20px;
+	--text-xl: 26px;
+
+	/* 모양 */
+	--radius-md: 8px;
+	--shadow-card: 0 1px 3px rgb(16 24 40 / 0.08), 0 1px 2px rgb(16 24 40 / 0.04);
+}

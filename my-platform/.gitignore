@@ -1,0 +1,19 @@
+.gradle/
+build/
+out/
+.idea/
+*.iml
+.vscode/
+
+# 외부 업체가 준 SDK(jar)는 커밋하지 않는다. 각 모듈의 libs/ 폴더에 로컬로만 둔다.
+platform-*/libs/
+
+# 비밀값(비밀번호, 토큰)을 담는 env 파일은 커밋하지 않는다. 필요한 이름 목록은 application-example.yml 에만 적는다.
+.env
+.env.*
+*.env
+
+# 비밀값이 들어가는 환경별 설정은 커밋하지 않는다. (예시와 local 만 커밋)
+**/application-*.yml
+!**/application-example.yml
+!**/application-local.yml

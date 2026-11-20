@@ -1,0 +1,10 @@
+node_modules
+.next
+out
+build
+dist
+package-lock.json
+AGENTS.md
+**/AGENTS.md
+# 템플릿 자리표시자(__TITLE__ 등)를 Markdown 굵게(**)로 바꾸지 않도록 제외한다.
+templates/app/README.md

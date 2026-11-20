@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+build/
+dist/
+*.tsbuildinfo
+next-env.d.ts
+
+# 환경변수 파일은 커밋하지 않는다. 예시(.env.example)만 커밋한다.
+.env
+.env.*
+!.env.example
+
+.idea/
+.vscode/
+*.log
+.DS_Store

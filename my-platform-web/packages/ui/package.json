@@ -1,0 +1,19 @@
+{
+  "name": "@wan/ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "공통 UI 컴포넌트와 디자인 토큰. 소스 그대로 앱이 가져다 쓴다(앱의 next.config 에서 transpilePackages).",
+  "exports": {
+    ".": "./index.ts",
+    "./tokens.css": "./styles/tokens.css"
+  },
+  "peerDependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5"
+  }
+}

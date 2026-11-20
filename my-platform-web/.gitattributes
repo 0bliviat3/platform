@@ -1,0 +1,8 @@
+# 줄바꿈은 저장소에서 LF 로 통일한다. (.editorconfig 와 동일)
+* text=auto eol=lf
+
+# 바이너리
+*.ico binary
+*.png binary
+*.jpg binary
+*.woff2 binary
